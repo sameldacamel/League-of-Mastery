@@ -33,9 +33,9 @@ Verification works off of rune page names, so basically we give the user a uniqu
 
 So the core purpose of this system is to correctly identify who is best at their champion. Every game affects your ELO no doubt about it. But working with database values and tournaments to make sure that players climb when needed is important. Lets break down each step that goes into this system.
 
-1. We start off by creating a leaderboard table in our database to collect champion level 5s that each player has.
-2. Second thing on the list is implementing a link between tournament callbacks and our database to make sure every player has their ELO updated after each game.
-3. Last obstacle is displaying the leaderboard rankings, not only on the leaderboard page, but also displaying each player's leaderboard rankings on their summoner page.
+1. We start off by creating a leaderboard table in our database to collect champion level 5s that each player has. We then use `assets/php/downloadProfile.php` to send level 5s to database.
+2. Second thing on the list is implementing a link between tournament callbacks and our database to make sure every player has their ELO updated after each game. Which is a big combonations of files working together.
+3. Last obstacle is displaying the leaderboard rankings, not only on the leaderboard page, but also displaying each player's leaderboard rankings on their summoner page, which is mostly handled in `assets/php/leaderboardHandler.php`.
 
 > All in all, I had a really fun time working with new technologies such as AngularJS, NodeJS, and Socket.IO. I definatly want to use angular in more web projects just because of its simplicity. GG boys, hope everyone does well :D ~Azoy
 
